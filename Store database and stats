@@ -1,0 +1,31 @@
+-- Create a grocery store database
+
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, product TEXT, category TEXT, color TEXT, state_of_matter TEXT, price INTEGER);
+
+-- insert the items and separate them by id, product, category, color, state of matter and price.
+
+INSERT into store VALUES (1, "fabuloso", "cleaning", "purple", "liquid", 8);
+INSERT INTO store VALUES  (2, "corn flour", "food", "yellow", "solid", 15);
+INSERT INTO store VALUES (3, "ham", "food", "pink", "solid", 5);
+INSERT INTO store VALUES (4, "construction_paper", "school", "multicolor", "solid", 7);
+INSERT INTO store VALUES (5, "mozarella sticks", "food", "yellow", "solid", 3);
+INSERT INTO store VALUES (6, "markers", "school", "multicolor", "solid", 2);
+INSERT INTO store VALUES (7, "gamer pc", "electronics", "blue", "solid", 4000);
+INSERT INTO store VALUES (8, "pepsi soda", "food", "black", "liquid", 2);
+INSERT INTO store VALUES(9, "calculator", "electronics", "green", "solid", 50);
+INSERT INTO store VALUES (10, "cooking oil", "food", "yellow", "liquid", 26);
+INSERT INTO store VALUES (11, "gummy bears", "food", "multicolor", "solid", 40);
+INSERT INTO store VALUES (12, "king bed", "furniture", "brown", "solid", 800);
+INSERT INTO store VALUES (13, "TV", "electronics", "white", "solid", 1300);
+INSERT INTO store VALUES (14, "designer dress", "clothing", "purple", "solid", 2800);
+INSERT INTO store VALUES (15, "diamond ring", "jewelry", "silver", "solid", 20000);
+
+--Display the items by price.
+
+SELECT * FROM store;
+ORDER BY price desc;
+
+-- Display items worth more than 20$.
+
+SELECT * FROM store WHERE price >20;
